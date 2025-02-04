@@ -7,7 +7,9 @@ class Car:
 
         # Валидация comfort_class
         if not 1 <= comfort_class <= 7:
-            raise ValueError("comfort_class должен быть целым числом от 1 до 7.")
+            raise ValueError(
+                "comfort_class должен быть целым числом от 1 до 7."
+            )
         self.comfort_class = comfort_class
 
         # Валидация clean_mark
@@ -28,7 +30,8 @@ class CarWashStation:
 
         if not 1.0 <= distance_from_city_center <= 10.0:
             raise ValueError(
-                "distance_from_city_center должно быть числом с плавающей точкой от 1.0 до 10.0."
+                "distance_from_city_center должно быть числом с плавающей точкой "
+                "от 1.0 до 10.0."
             )
         self.distance_from_city_center = distance_from_city_center
 
@@ -37,7 +40,8 @@ class CarWashStation:
         # Валидация average_rating
         if not 1.0 <= average_rating <= 5.0:
             raise ValueError(
-                "average_rating должен быть числом с плавающей точкой от 1.0 до 5.0."
+                "average_rating должен быть числом с плавающей точкой "
+                "от 1.0 до 5.0."
             )
 
         if round(average_rating, 1) != average_rating:
