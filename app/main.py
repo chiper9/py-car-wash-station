@@ -30,8 +30,8 @@ class CarWashStation:
 
         if not 1.0 <= distance_from_city_center <= 10.0:
             raise ValueError(
-                "distance_from_city_center должно быть числом с плавающей точкой "
-                "от 1.0 до 10.0."
+                "distance_from_city_center должно быть числом "
+                "с плавающей точкой от 1.0 до 10.0."
             )
         self.distance_from_city_center = distance_from_city_center
 
